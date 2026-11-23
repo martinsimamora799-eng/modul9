@@ -3,3 +3,41 @@
 
 // Bootstrap Icons
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+.bg-purple { background-color: #7533F9 !important; }
+#footer a { text-decoration: none; color: var(--bs-body-color); }
+#footer a:hover { text-decoration: underline; color: #7533F9 !important; }
+
+/* ===== Kustom portofolio ===== */
+:root { --purple: #7533F9; box-sizing: border-box; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { font-family: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif; background: var(--bs-body-bg); }
+h1, h2, h3, .navbar-brand, .display-3, .display-5 { font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; letter-spacing: -.02em; }
+.navbar.fixed-top { padding-top: env(safe-area-inset-top, 0px); }
+.brand-mark { display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; background: #fff; color: var(--purple); font: 800 1.1rem 'Bricolage Grotesque', sans-serif; }
+.surface { background: var(--bs-tertiary-bg); }
+.profile-wrap { max-width: 380px; margin-inline: auto; }
+.profile { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: 50% 30%; border-radius: 2rem; box-shadow: 14px 14px 0 var(--purple); }
+.icon-box { display: inline-grid; place-items: center; width: 48px; height: 48px; border-radius: .9rem; color: #fff; font-size: 1.4rem; }
+.fact dt { font-weight: 600; color: var(--bs-secondary-color); font-size: .9rem; }
+.fact dd { margin-bottom: .9rem; }
+.tl { border-left: 3px solid var(--purple); padding-left: 1.25rem; }
+.tl-item { position: relative; margin-bottom: 1.5rem; }
+.tl-item::before { content: ""; position: absolute; left: calc(-1.25rem - 8px); top: .35rem; width: 13px; height: 13px; border-radius: 50%; background: var(--purple); }
+.mosaic img, .shot img { width: 100%; height: 100%; object-fit: cover; border-radius: 1rem; display: block; }
+.mosaic .big { aspect-ratio: 4/3; }
+.mosaic .sm { aspect-ratio: 1/1; }
+.shot { position: relative; aspect-ratio: 3/4; overflow: hidden; border-radius: 1rem; margin: 0; }
+.shot figcaption { position: absolute; inset: auto 0 0 0; padding: 2.5rem 1rem .9rem; color: #fff; font-size: .95rem; background: linear-gradient(transparent, rgba(0, 0, 0, .75)); }
+.shot figcaption b { display: block; font-size: 1.05rem; }
+.quote { font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(1.4rem, 3.2vw, 2.2rem); line-height: 1.25; border-left: 5px solid var(--purple); padding-left: 1.2rem; }
+.skill-card { border: 1px solid var(--bs-border-color); border-radius: 1.25rem; padding: 1.5rem; height: 100%; background: var(--bs-body-bg); }
+.chip { display: inline-block; padding: .3rem .8rem; margin: 0 .35rem .5rem 0; border-radius: 99px; background: rgba(117, 51, 249, .12); color: var(--bs-body-color); font-size: .9rem; border: 1px solid rgba(117, 51, 249, .35); }
+.soft li { margin-bottom: .7rem; }
+.contact-link { display: flex; align-items: center; gap: 1rem; padding: 1.1rem 1.25rem; border-radius: 1rem; border: 1px solid var(--bs-border-color); text-decoration: none; color: var(--bs-body-color); background: var(--bs-body-bg); }
+.contact-link:hover { border-color: var(--purple); color: var(--bs-body-color); }
+.contact-link:focus-visible, .btn:focus-visible, .nav-link:focus-visible { outline: 3px solid #ffc107; outline-offset: 2px; }
+.contact-link i { font-size: 1.6rem; color: var(--purple); }
+#main a:not(.btn) { color: var(--bs-secondary-color); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

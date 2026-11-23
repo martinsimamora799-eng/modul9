@@ -12,7 +12,7 @@ Route::get('/routing', function() {
 Route::get('/basic_routing', function() {
     return 'Hello World';
 });
-Route::view('/view_route', 'view_route', ['name' => 'Ilham']);
+Route::view('/view_route', 'view_route', ['name' => 'Martin']);
 Route::get('/controller_route', [RouteController::class, 'index']);
 Route::redirect('/', '/routing');
 Route::get('/user/{id}', function($id) {
@@ -53,7 +53,5 @@ Route::prefix('admin')->name('admin.')->group(function() {
     })->name('items');
 });
 
-Route::view('/webstatis', 'index')->name('webstatis.home');
-Route::view('/webstatis/about', 'about')->name('webstatis.about');
-Route::view('/webstatis/contact', 'contact')->name('webstatis.contact');
-Route::view('/webstatis/portfolio', 'portofolio')->name('webstatis.portofolio');
+// Tugas nomor 2: web statis (portofolio) dipindahkan ke Laravel
+Route::view('/webstatis', 'portofolio')->name('webstatis.home');
